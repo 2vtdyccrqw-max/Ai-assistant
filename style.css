@@ -1,0 +1,41 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#7c3aed;
+  --muted:#94a3b8;
+  --text:#e6eef8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+  background:linear-gradient(180deg,#071124 0%, #081028 100%);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.app{
+  width:100%;
+  max-width:720px;
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.6);
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+header h1{margin:0;font-size:20px}
+.subtitle{margin:0;color:var(--muted);font-size:13px}
+#chat{flex:1;overflow:auto;padding:8px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);}
+#messages{display:flex;flex-direction:column;gap:10px}
+.msg{max-width:85%;padding:10px;border-radius:10px;line-height:1.35}
+.msg.user{align-self:flex-end;background:linear-gradient(90deg,var(--accent),#5b21b6);color:white}
+.msg.assistant{align-self:flex-start;background:rgba(255,255,255,0.03);color:var(--text);border:1px solid rgba(255,255,255,0.02)}
+form{display:flex;gap:8px}
+input#input{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:var(--text)}
+button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+small,footer.small{color:var(--muted);font-size:12px;text-align:center;margin-top:6px}
