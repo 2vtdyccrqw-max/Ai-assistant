@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>AI Assistant</h1>
+      <p class="subtitle">Ask anything — powered by OpenAI</p>
+    </header>
+
+    <main id="chat">
+      <div id="messages"></div>
+    </main>
+
+    <form id="form" autocomplete="off">
+      <input id="input" placeholder="Type your question..." />
+      <button type="submit">Send</button>
+    </form>
+
+    <footer class="small">
+      <em>Local demo. Your API key stays on the server.</em>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
